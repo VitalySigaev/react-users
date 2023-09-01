@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.scss';
-import Users from './Users/Users';
-import { Success } from './Success/Success';
+import Users from './components/Users/Users';
+import { Success } from './components/Success/Success';
 
 
 function App() {
@@ -36,6 +36,7 @@ function App() {
   }
 
   return (
+    
     <div className="App">
       {
         success ? (<Success count={invites.length} />) :
